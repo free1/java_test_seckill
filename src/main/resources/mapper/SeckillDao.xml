@@ -12,7 +12,7 @@
         SELECT
           sk.seckill_id,
           sk.user_phone,
-          sk_create_time,
+          sk.create_time,
           sk.state,
           s.seckill_id "seckill.seckill_id",
           s.name "seckill.name",
@@ -22,6 +22,6 @@
           s.create_time "seckill.create_time"
         FROM success_killed sk
         INNER JOIN seckill s ON sk.seckill_id = s.seckill_id
-        WHERE sk.seckill_id=#{seckillId}
+        WHERE sk.seckill_id=#{seckillId} AND sk.user_phone=#{userPhone}
     </select>
 </mapper>

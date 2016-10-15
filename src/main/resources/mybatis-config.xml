@@ -9,8 +9,8 @@
         <!--使用jdbc的getGenerateKeys获取数据库自增id-->
         <setting name="useGeneratedKeys" value="true"/>
         <!--使用列别名替换列名-->
-        <setting name="userColumnLabel" value="true"></setting>
+        <setting name="useColumnLabel" value="true"/>
         <!--开启驼峰命名-->
-        <setting name="mapUnderscoreCamelCase" value="true"></setting>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
 </configuration>
